@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+$color-main : yellow;
+$color-second : #f97100;
+$color-dark : #181717;
+$font-family : 'Eagle Lake', cursive;
+$font-size : 60px;
+$padding : 30px;
+$padding-small: 8px;
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family : $font-family;
+  font-size : $font-size;
+  padding: $padding;
+}
+
+
+.rings {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.padding-low {
+  padding: $padding-small;
+}
+
+@mixin myRing ($size, $color) {
+  width : $size;
+  height: $size;
+  border-radius : 50%;
+  border: $size/10 solid $color;
+  filter : drop-shadow($size/25 $size/25 1px darken($color, 15%));
+}
+
+.ring1 {
+  @include myRing (80px, $color-second);
+}
+
+.ring2 {
+  @include myRing(150px, $color-main);
+}
+
+@for $i from 1 through 6 {
+  .ring3-#{$i} {
+    @include myRing($i*15 +15px, $color-dark);
+    margin-left: -(percentage($i*0.015));
+
+  }
+}
+

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap");
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Eagle Lake", cursive;
+    font-size: 60px;
+    padding: 30px;
+}
+
+.rings {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.padding-low {
+    padding: 8px;
+}
+
+.ring1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 8px solid #f97100;
+    filter: drop-shadow(3.2px 3.2px 1px #ad4e00);
+}
+
+.ring2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 15px solid yellow;
+    filter: drop-shadow(6px 6px 1px #b3b300);
+}
+
+.ring3-1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #181717;
+    filter: drop-shadow(1.2px 1.2px 1px black);
+    margin-left: -1.5%;
+}
+
+.ring3-2 {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 4.5px solid #181717;
+    filter: drop-shadow(1.8px 1.8px 1px black);
+    margin-left: -3%;
+}
+
+.ring3-3 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 6px solid #181717;
+    filter: drop-shadow(2.4px 2.4px 1px black);
+    margin-left: -4.5%;
+}
+
+.ring3-4 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 7.5px solid #181717;
+    filter: drop-shadow(3px 3px 1px black);
+    margin-left: -6%;
+}
+
+.ring3-5 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 9px solid #181717;
+    filter: drop-shadow(3.6px 3.6px 1px black);
+    margin-left: -7.5%;
+}
+
+.ring3-6 {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    border: 10.5px solid #181717;
+    filter: drop-shadow(4.2px 4.2px 1px black);
+    margin-left: -9%;
+}
